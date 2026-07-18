@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Brithday Princess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-hearts" aria-hidden="true">
+        <span>💗</span>
+        <span>💖</span>
+        <span>❤️</span>
+        <span>💕</span>
+        <span>💓</span>
+        <span>💞</span>
+    </div>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-card">
+            <div class="flower-ring">
+                <span class="flower">🌸</span>
+                <span class="flower">🌺</span>
+                <span class="flower">🌼</span>  
+            </div>
+            <div class="loading-text">kejutan untuk Airaa...</div>
+            <div class="heart-row">
+                <span class="floating-heart">💗</span>
+                <span class="floating-heart">💖</span>
+                <span class="floating-heart">❤️</span>
+            </div>
+        </div>
+        <div class="loading-orbits">
+            <span class="orbit-item flower orbit-1">🌸</span>
+            <span class="orbit-item heart orbit-2">💗</span>
+            <span class="orbit-item flower orbit-3">🌺</span>
+            <span class="orbit-item heart orbit-4">💖</span>
+            <span class="orbit-item flower orbit-5">🌼</span>
+            <span class="orbit-item heart orbit-6">❤️</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-blooms" aria-hidden="true">
+            <span>🌸</span>
+            <span>💗</span>
+            <span>🌺</span>
+            <span>🌼</span>
+            <span>💖</span>
+            <span>🌷</span>
+            <span>💞</span>
+            <span>🌻</span>
+            <span>💓</span>
+            <span>🌹</span>
+            <span>💕</span>
+            <span>🌸</span>
+            <span>💗</span>
+            <span>🌺</span>
+            <span>💖</span>
+            <span>🌼</span>
+        </div>
+        <!-- PAGE 1: ENVELOPE OPEN -->
+        <div class="page active" id="page1">
+            <div class="envelope-scene">
+                <div class="surprise-decor">
+                    <span class="motion-love">💗</span>
+                    <span class="motion-love">💖</span>
+                    <span class="motion-flower">🌸</span>
+                </div>
+                <div class="envelope" onclick="openEnvelope()" role="button" tabindex="0" aria-label="Sentuh untuk membuka kejutan">
+                    <div class="envelope-ribbon">🎀</div>
+                    <div class="envelope-body">
+                        <p>Klik pelan-pelan ya 🤍</p>
+                    </div>
+                </div>
+                <div class="tied-flower">
+                    <span>🌺</span>
+                    <span class="flower-string"></span>
+                </div>
+                <h1>hii <S></S>princesss cancii</h1>
+                <p>before you start, there's something for you.</p>
+            </div>
+        </div>
+
+    <button class="music-area" id="playBtn">🎵 Our Song</button>
+    <audio id="backgroundMusic" loop>
+        <source src="music/princess.mp3" type="audio/mpeg">
+        love........
+    </audio>
+
+        <div class="page" id="page2">
+            <div class="page-header">
+                <h1>📸 us.</h1>
+                <p>a few moments worth keeping...</p>
+            </div>
+            <div class="memory-row" id="memoryRow"></div>
+            <div class="gallery-section">
+                <h2>Our Favorite Memories</h2>
+                <div class="gallery-stack" id="galleryStack"></div>
+                <div class="gallery-caption" id="galleryCaption">Geser foto untuk melihat momen selanjutnya.</div>
+            </div>
+            <div class="memory-tip">there's more waiting for you.</div>
+            <div class="buttons">
+                <button class="secondary" onclick="prevPage(2)">← Go Back</button>
+                <button onclick="nextPage(2)">The Next Part → 💗</button>
+            </div>
+        </div>
+
+        <div class="overlay" id="memoryOverlay" onclick="closeMemory()">
+            <div class="overlay-card" onclick="event.stopPropagation()">
+                <img id="overlayImage" class="overlay-image" src="" alt="" />
+                <h2 id="overlayTitle"></h2>
+                <p id="overlayText"></p>
+                <button onclick="closeMemory()">Tutup</button>
+            </div>
+        </div>
+
+        <!-- PAGE 3: CAKE -->
+        <div class="page" id="page3">
+            <div class="page-header">
+                <h1>🎂 Tiup Lilinnya Dulu</h1>
+                <p>Katanya kalau lilinnya habis, harapannya bakal sampai.</p>
+            </div>
+            <div class="cake-scene">
+                <div class="cake-plate"></div>
+                <div class="cake">
+                    <div class="cake-frosting">
+                        <div class="sprinkles" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="cake-layer-1"></div>
+                    <div class="cake-layer-2"></div>
+                    <div class="cake-layer-3"></div>
+                    <div class="candles" aria-hidden="true">
+                        <div class="candle candle-1"><span class="flame"></span><span class="wick"></span></div>
+                        <div class="candle candle-2"><span class="flame"></span><span class="wick"></span></div>
+                        <div class="candle candle-3"><span class="flame"></span><span class="wick"></span></div>
+                    </div>
+                </div>
+                <div class="cake-glow"></div>
+            </div>
+            <div class="buttons">
+                <button class="secondary" onclick="prevPage(3)">← Go Back</button>
+                <button onclick="nextPage(3)">The Next Part → 💗</button>
+            </div>
+        </div>
+
+        <!-- PAGE 4: FLOATING WISHES -->
+        <div class="page" id="page4">
+            <div class="page-header">
+                <h1>untuk kamu✨</h1>
+                <p>Kalau aku bisa ngabulin satu, kamu mau yang mana?</p>
+            </div>
+            <div class="wish-grid">
+                <button class="wish-bubble" onclick="showWish('hmm...')">hmm...</button>
+                <button class="wish-bubble" onclick="showWish('trust me')">trust me</button>
+                <button class="wish-bubble" onclick="showWish('idk')">idk</button>
+                <button class="wish-bubble" onclick="showWish('maybe this one?')">maybe this one?</button>
+                <button class="wish-bubble" onclick="showWish('last one')">last one</button>
+            </div>
+            <div class="wish-result" id="wishResult">Pilih satu ya 🤍</div>
+            <div class="buttons">
+                <button class="secondary" onclick="prevPage(4)">← Go Back</button>
+                <button onclick="nextPage(4)">The Next Part → 💗</button>
+            </div>
+        </div>
+
+        <!-- PAGE 5: LOVE MESSAGE -->
+        <div class="page" id="page5">
+            <div class="page-header">
+                <h1>💗 A Letter For You</h1>
+                <p>Written with love, just for your special day.</p>
+            </div>
+            <div class="love-card">
+                <p>Thank you udah hadir dan bikin hari-hari biasa terasa jauh lebih berwarna.
+                    I hope this new chapter brings you more happiness, more peace, and countless reasons to smile.
+                    Apa pun yang nanti terjadi, please don't be too hard on yourself. And if one day everything feels a little too much,
+                    just remember... you'll always have someone who's quietly cheering for you. Me.
+                    <p>lov u princess 💗</p>
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="secondary" onclick="prevPage(5)">← Go Back</button>
+                <button onclick="nextPage(5)">The Next Part → 💗</button>
+            </div>
+        </div>
+
+        <!-- PAGE 6: OPEN GIFT -->
+        <div class="page" id="page6">
+            <div class="page-header">
+                <h1>hey princess, this one's yours 💗</h1>
+                <p>okay... which one first? 👀</p>
+            </div>
+            <div class="gift-list">
+                <button class="gift-item" onclick="toggleGift('letter')">just a little note.</button>
+                <button class="gift-item" onclick="toggleGift('photo')">📷 Foto Kenangan</button>
+                <button class="gift-item" onclick="toggleGift('secret')">🔐 seccret</button>
+            </div>
+            <div class="gift-content" id="giftContent">Pilih hadiah untuk melihat isinya.</div>
+            <div class="buttons">
+                <button class="secondary" onclick="prevPage(6)">← Go Back</button>
+                <button onclick="nextPage(6)">The Next Part → 💗</button>
+            </div>
+        </div>
+
+        <!-- PAGE 7: PREMIUM BOX -->
+        <div class="page" id="page7">
+            <div class="page-header">
+                <h1>For The Girl I Love</h1>
+            </div>
+            <div class="premium-box" onclick="openPremiumBox()">
+                <div class="box-lid"></div>
+                <div class="box-base"></div>
+                <div class="box-ribbon"></div>
+            </div>
+            <div class="final-message" id="finalMessage">Curious? Tap the box. 👀</div>
+            <div class="buttons">
+                <button class="secondary" onclick="prevPage(7)">← Go Back</button>
+                <button onclick="nextPage(7)">The Next Part → 💗</button>
+            </div>
+        </div>
+
+        <!-- PAGE 8: POLAROID -->
+        <div class="page" id="page8">
+            <div class="page-header">
+                <h1>Snapshots of Us</h1>
+                <p>Some memories deserve their own place. 🤍</p>
+            </div>
+            <div class="polaroid-scene">
+                <div class="polaroid-frame">
+                    <div class="polaroid-photo">
+                        <img src="foto-2/princes-v3.jpeg" alt="Foto Aira">
+                    </div>
+                    <div class="polaroid-caption">
+                        <strong>untuk airaa(imuttt kiyuttt)</strong>
+                        <span>Out of all the memories in my life, you are still my favorite one. 💗</span>
+                    </div>
+                </div>
+                <div class="polaroid-strip">
+                    <div class="mini-polaroid">
+                        <img src="foto-2/princes-v5.png" alt="Polaroid kecil 1">
+                    </div>
+                    <div class="mini-polaroid">
+                        <img src="foto princes/princes-2.jpeg" alt="Polaroid kecil 2">
+                    </div>
+                    <div class="mini-polaroid">
+                        <img src="foto princes/princes-4.jpeg" alt="Polaroid kecil 3">
+                    </div>
+                </div>
+            </div>
+            <div class="closing-message">
+                <p>🌺 Thank you for spending this moment with me.🌻</p>
+                <p class="closing-heart">💕</p>
+                <p class="closing-wish">Happy Birthday, Princess.</p>
+                <button class="close-btn" onclick="closePage()">Tutup ✨</button>
+            </div>
+
+            <div id="pageEndScreen" class="page-end-screen" aria-label="Layar QR love">
+                <div class="qr-love-slot" aria-label="Tempat QR love">
+                    <div class="qr-love-heart">
+                        <img id="qrLoveImage" class="qr-love-image" src="foto-2/princes-v5.png" alt="Foto love" />
+                        <div id="qrLovePlaceholder" class="qr-love-placeholder">
+                            <span>💖</span>
+                            <p>tempat QR love</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

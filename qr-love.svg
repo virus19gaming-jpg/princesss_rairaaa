@@ -1,0 +1,33 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" rx="38" fill="#fff7fb"/>
+  <rect x="34" y="34" width="332" height="332" rx="28" fill="#ffffff" stroke="#e95d95" stroke-width="4"/>
+  <rect x="58" y="58" width="96" height="96" rx="12" fill="#fff" stroke="#c2185b" stroke-width="6"/>
+  <rect x="74" y="74" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="110" y="74" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="74" y="110" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="110" y="110" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="246" y="58" width="96" height="96" rx="12" fill="#fff" stroke="#c2185b" stroke-width="6"/>
+  <rect x="262" y="74" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="298" y="74" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="262" y="110" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="298" y="110" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="58" y="246" width="96" height="96" rx="12" fill="#fff" stroke="#c2185b" stroke-width="6"/>
+  <rect x="74" y="262" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="110" y="262" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="74" y="298" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="110" y="298" width="24" height="24" rx="4" fill="#c2185b"/>
+  <rect x="168" y="168" width="64" height="64" rx="10" fill="#ffeef4" stroke="#ef8fb5" stroke-width="4"/>
+  <path d="M200 182c0-10 8-18 18-18 10 0 18 8 18 18 0 16-18 24-18 24s-18-8-18-24z" fill="#e91e63"/>
+  <rect x="168" y="58" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <rect x="210" y="58" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <rect x="168" y="320" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <rect x="210" y="320" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <rect x="320" y="168" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <rect x="320" y="210" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <rect x="58" y="168" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <rect x="58" y="210" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <rect x="320" y="58" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <rect x="320" y="320" width="22" height="22" rx="4" fill="#f48fb1"/>
+  <circle cx="330" cy="330" r="10" fill="#c2185b"/>
+  <circle cx="70" cy="70" r="10" fill="#c2185b"/>
+</svg>
